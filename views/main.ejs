@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="signInArea">
+    <div class="container">
+        <h2>匿名聊天室</h2>
+        <form action="" id="signInForm">
+            <div class="form-group">
+                <input type="text" class="form-control" autocomplete="off" id="username" placeholder="请输入昵称"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="form-control btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="chatArea" hidden>
+    <div class="container">
+        <div class="well">
+            <ul id="messages"></ul>
+        </div>
+        <form action="" class="form-horizontal" id="chatForm">
+            <div class="form-group">
+                <div class="col-xs-11 col-sm-11">
+                    <input id="m" class=" form-control " placeholder="Please Input Message...">
+                </div>
+                <div class="col-xs-1 col-sm-1">
+                    <button class="btn btn-primary ">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/javascripts/mainNew.js"></script>
+</body>
+</html>

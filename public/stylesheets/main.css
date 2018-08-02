@@ -1,0 +1,127 @@
+/*[class^="col-"]  {*/
+/*border: 1px;*/
+/*background-color: green;*/
+/*padding: 1px;*/
+/*}*/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+div.chatArea {
+    height: 100%;
+}
+
+div.container {
+    height: 100%;
+}
+
+div.well {
+    height: 90%;
+}
+
+ul {
+    height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#messages li {
+    list-style-type: none;
+    clear: both;
+}
+
+.chatBubbleLeft {
+    border: 1px solid red;
+    width: 60%;
+}
+
+.chatBubbleRight {
+    border: 1px green;
+    width: 60%;
+}
+
+div.avatar label {
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+}
+
+div.chatBubbleLeft p {
+    margin: 10px;
+}
+
+.avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.talk-bubble {
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: auto;
+    background-color: lightyellow;
+}
+
+.talk-bubble-right {
+    float: right;
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: auto;
+    background-color: lightyellow;
+}
+
+/* Right triangle placed top left flush. */
+.tri-right.left-top:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: lightyellow transparent transparent transparent;
+}
+
+.tri-right.btm-right:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 0px;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: lightyellow lightyellow transparent transparent;
+}
+
+/* talk bubble contents */
+.talktext {
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.talktext p {
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+
+
+
+
