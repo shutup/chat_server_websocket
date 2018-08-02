@@ -3,7 +3,7 @@ const WebSocket = require('ws');
 const wss = new WebSocket.Server({port: 8080});
 var users = new Map();
 var user_sockets = new Map();
-var groups = {};
+var groups = new Map();
 
 wss.on('connection', function connection(ws) {
     ws.on('message', function incoming(message) {

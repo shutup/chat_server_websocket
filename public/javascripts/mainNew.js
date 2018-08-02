@@ -8,7 +8,7 @@ $(function () {
     var $signInArea = $('.signInArea');
     var $chatArea = $('.chatArea');
 
-    ws = new WebSocket('ws://localhost:8080');
+    ws = new WebSocket('ws://chats.fuckqq.tk:8080');
     ws.onopen = function () {
         console.log('websocket is connected ...');
     };
